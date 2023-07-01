@@ -1,0 +1,210 @@
+html, body {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    margin:0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+    background-color: hsl(221, 100%, 96%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    margin: auto;
+
+}
+
+.card-container {
+    /* background-color: red; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+}
+
+.container-result {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 60px 40px;
+    border-radius: 30px;
+    background-image: linear-gradient(hsl(241, 75%, 60%), hsl(241, 79%, 58%));
+}
+
+.result {
+    transform: translateY(-20px);
+    font-size: 19px;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+    color:rgba(245, 245, 245, 0.577);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    gap: 10px;
+    border-radius: 70%;
+    width: 60%;
+    height: 20vh;
+}
+.score-num {
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+.score-100 {
+    color: rgba(226, 226, 226, 0.658);
+}
+
+.great {
+    font-size: 22px;
+}
+
+.result-text {
+    text-align: center;
+    font-weight: 300;
+    color: rgba(208, 208, 208, 0.695);
+
+}
+
+.summery-text {
+    font-size: 19px;
+    display: flex;
+    justify-content: start;
+}
+
+.container-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    gap: 2%;
+}
+
+.text {
+    color: rgba(199, 187, 77);
+    padding-left: 5px;
+    position: absolute;
+}
+.sub-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+
+.sub-result.reaction {
+    color: hsl(0, 100%, 67%);
+    padding: 0px 10px;
+    background-color: hsla(0, 100%, 67%, 0.15);
+}
+.sub-result.memory {
+    color: hsl(39, 100%, 56%);
+    padding: 0px 10px;
+    background-color: hsla(39, 100%, 56%, 0.15);
+}
+
+.sub-result.verbal {
+    color: hsl(166, 100%, 37%);
+    padding: 0px 10px;
+    background-color: hsla(166, 100%, 37%, 0.15);
+
+}
+
+.sub-result.visual {
+    color: hsl(234, 85%, 45%);
+    padding: 0px 10px;
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+
+.btn {
+    font-size: 15px;
+    margin-top: 20px;
+    color: white;
+    background-image: linear-gradient(hsl(241, 81%, 65%), hsl(241, 58%, 54%));
+    border: none;
+    padding: 12px 40px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    background-image: linear-gradient(hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+}
+.attribution {
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+    
+    }
+    .card-container {
+        /* width: 70%; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    }
+
+    .container-result {
+        color: white;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: rgb(72, 72, 185);
+    }
+
+    
+    .container-summary {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } 
+}
